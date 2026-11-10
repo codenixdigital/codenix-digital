@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CODENIX DIGITAL | Sites, lojas virtuais e sistemas web</title>
+  <meta name="description" content="CODENIX DIGITAL: agência brasileira de desenvolvimento de sites, landing pages, lojas virtuais e sistemas web modernos, responsivos e personalizados.">
+  <meta name="theme-color" content="#090E1A">
+  <meta property="og:title" content="CODENIX DIGITAL">
+  <meta property="og:description" content="Transformando ideias em soluções digitais.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232563EB'/%3E%3Ctext x='16' y='22' font-size='16' font-family='monospace' font-weight='bold' text-anchor='middle' fill='white'%3E%26lt;/%26gt;%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ícones reutilizáveis (SVG sprite) -->
+  <svg class="sprite" width="0" height="0" aria-hidden="true">
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></symbol>
+    <symbol id="i-rocket" viewBox="0 0 24 24"><path d="M5 19c0-3 1-4 3-4l-1-3 5-6c2-2 5-3 7-3 0 2-1 5-3 7l-6 5-3-1c0 2-1 3-4 3z"/><circle cx="15" cy="9" r="1.5"/></symbol>
+    <symbol id="i-cart" viewBox="0 0 24 24"><path d="M3 4h2l2 11h11l2-8H6"/><circle cx="9" cy="19" r="1.5"/><circle cx="17" cy="19" r="1.5"/></symbol>
+    <symbol id="i-cube" viewBox="0 0 24 24"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9z"/><path d="M4 7.5l8 4.5 8-4.5M12 12v9"/></symbol>
+    <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14 6a4 4 0 0 0 5 5l-9 9a2.1 2.1 0 0 1-3-3l9-9a4 4 0 0 0-2-2z"/></symbol>
+    <symbol id="i-devices" viewBox="0 0 24 24"><rect x="3" y="5" width="13" height="10" rx="1.5"/><path d="M1 19h17"/><rect x="17" y="9" width="5" height="10" rx="1.2"/></symbol>
+    <symbol id="i-pen" viewBox="0 0 24 24"><path d="M4 20l1-4L16 5l3 3L8 19z"/><path d="M14 7l3 3"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></symbol>
+    <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r=".8"/></symbol>
+    <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10c1 1 1 3 1 3h6s0-2 1-3a6 6 0 0 0-4-10z"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-4 8-8 9-4-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-handshake" viewBox="0 0 24 24"><path d="M3 11l4-4 4 2 3-2 4 3 3-1M3 11l6 6a2 2 0 0 0 3 0l1-1M21 9l-5 8-2-1"/></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></symbol>
+  </svg>
+
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- ============ SEÇÃO 1: HEADER ============ -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="logo" aria-label="CODENIX DIGITAL, ir para o início">
+        <span class="logo__mark" aria-hidden="true">&lt;/&gt;</span>CODENIX <span class="logo__light">DIGITAL</span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Navegação principal">
+        <ul class="nav__list">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#portfolio">Portfólio</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li class="nav__cta"><a class="btn btn--primary btn--sm" href="#contato">Solicitar orçamento</a></li>
+        </ul>
+      </nav>
+      <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- ============ SEÇÃO 2: HERO ============ -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero__glow hero__glow--a" aria-hidden="true"></div>
+      <div class="hero__glow hero__glow--b" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="hero__tag">Desenvolvimento web sob medida</p>
+          <h1 id="hero-title">Transformamos suas ideias em experiências digitais extraordinárias.</h1>
+          <p class="hero__sub">Desenvolvemos sites modernos, sistemas inteligentes e soluções digitais personalizadas para impulsionar o seu negócio.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#contato">Solicitar orçamento</a>
+            <a class="btn btn--ghost" href="#portfolio">Conhecer projetos</a>
+          </div>
+        </div>
+
+        <!-- Janela de código decorativa -->
+        <div class="code" aria-hidden="true">
+          <div class="code__bar"><i></i><i></i><i></i><span>projeto.js</span></div>
+<pre><code><span class="c-k">const</span> <span class="c-v">projeto</span> = {
+  <span class="c-p">cliente</span>: <span class="c-s">"seu negócio"</span>,
+  <span class="c-p">design</span>: <span class="c-s">"personalizado"</span>,
+  <span class="c-p">layout</span>: <span class="c-s">"responsivo"</span>,
+  <span class="c-p">entrega</span>: <span class="c-s">"sob medida"</span>
+};
+
+<span class="c-k">function</span> <span class="c-f">transformar</span>(ideia) {
+  <span class="c-k">return</span> ideia.<span class="c-f">construir</span>(projeto);
+}<span class="code__cursor"></span></code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SEÇÃO 3: SOBRE ============ -->
+    <section class="section" id="sobre" aria-labelledby="sobre-title">
+      <div class="container about">
+        <div class="reveal">
+          <h2 id="sobre-title">Tecnologia que transforma negócios.</h2>
+          <p class="lead">A CODENIX DIGITAL é uma agência de desenvolvimento web focada em soluções modernas, funcionais e personalizadas. Cada projeto nasce das necessidades reais do negócio, e não de modelos prontos.</p>
+        </div>
+        <ul class="values">
+          <li class="card glass reveal"><svg class="ico"><use href="#i-bulb"/></svg><h3>Inovação</h3><p>Tecnologias atuais aplicadas com criatividade.</p></li>
+          <li class="card glass reveal"><svg class="ico"><use href="#i-shield"/></svg><h3>Qualidade</h3><p>Código limpo, testado e pensado para durar.</p></li>
+          <li class="card glass reveal"><svg class="ico"><use href="#i-eye"/></svg><h3>Transparência</h3><p>Prazos, etapas e escopo sempre claros.</p></li>
+          <li class="card glass reveal"><svg class="ico"><use href="#i-handshake"/></svg><h3>Compromisso com o cliente</h3><p>Seu objetivo guia cada decisão do projeto.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ SEÇÃO 4: SERVIÇOS ============ -->
+    <section class="section section--alt" id="servicos" aria-labelledby="serv-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <h2 id="serv-title">Nossos serviços</h2>
+          <p class="lead">Do primeiro site ao sistema completo, com soluções para cada etapa do seu negócio digital.</p>
+        </header>
+        <div class="grid grid--3">
+          <article class="card glass service reveal"><svg class="ico"><use href="#i-globe"/></svg><h3>Desenvolvimento de Sites</h3><p>Sites institucionais modernos, rápidos e responsivos.</p></article>
+          <article class="card glass service reveal"><svg class="ico"><use href="#i-rocket"/></svg><h3>Landing Pages</h3><p>Páginas estratégicas para apresentar produtos, serviços e campanhas.</p></article>
+          <article class="card glass service reveal"><svg class="ico"><use href="#i-cart"/></svg><h3>Lojas Virtuais</h3><p>Catálogos digitais e soluções para vendas online.</p></article>
+          <article class="card glass service reveal"><svg class="ico"><use href="#i-cube"/></svg><h3>Sistemas Web</h3><p>Aplicações personalizadas para organizar processos e informações.</p></article>
+          <article class="card glass service reveal"><svg class="ico"><use href="#i-wrench"/></svg><h3>Manutenção de Sites</h3><p>Atualizações, melhorias e suporte técnico.</p></article>
+          <article class="card glass service reveal"><svg class="ico"><use href="#i-devices"/></svg><h3>Design Responsivo</h3><p>Experiências adaptadas para computadores, tablets e celulares.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SEÇÃO 5: PORTFÓLIO ============ -->
+    <section class="section" id="portfolio" aria-labelledby="port-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <h2 id="port-title">Nosso portfólio</h2>
+          <p class="lead">Um projeto publicado e dois demonstrativos que mostram o estilo e a qualidade do nosso trabalho. Os demonstrativos não são trabalhos de clientes reais.</p>
+        </header>
+        <!-- Os cards são gerados pelo script.js a partir da lista PROJETOS. Edite lá para colocar seus projetos do GitHub. -->
+        <div class="grid grid--portfolio" id="portfolio-grid"></div>
+        <noscript><p class="lead">Ative o JavaScript para ver os projetos demonstrativos.</p></noscript>
+      </div>
+    </section>
+
+    <!-- ============ SEÇÃO 6: DIFERENCIAIS ============ -->
+    <section class="section section--alt" id="diferenciais" aria-labelledby="dif-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <h2 id="dif-title">Por que escolher a CODENIX</h2>
+        </header>
+        <div class="grid grid--3">
+          <div class="feature reveal"><svg class="ico"><use href="#i-pen"/></svg><div><h3>Design personalizado</h3><p>Identidade visual pensada para a sua marca.</p></div></div>
+          <div class="feature reveal"><svg class="ico"><use href="#i-devices"/></svg><div><h3>Sites responsivos</h3><p>Funcionam bem em qualquer tamanho de tela.</p></div></div>
+          <div class="feature reveal"><svg class="ico"><use href="#i-code"/></svg><div><h3>Código organizado</h3><p>Fácil de entender, manter e evoluir.</p></div></div>
+          <div class="feature reveal"><svg class="ico"><use href="#i-chat"/></svg><div><h3>Integração com WhatsApp</h3><p>Seus clientes falam com você em um clique.</p></div></div>
+          <div class="feature reveal"><svg class="ico"><use href="#i-eye"/></svg><div><h3>Comunicação transparente</h3><p>Você acompanha cada etapa do projeto.</p></div></div>
+          <div class="feature reveal"><svg class="ico"><use href="#i-target"/></svg><div><h3>Soluções sob medida</h3><p>Adaptadas às necessidades de cada negócio.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SEÇÃO 7: PROCESSO ============ -->
+    <section class="section" id="processo" aria-labelledby="proc-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <h2 id="proc-title">Como desenvolvemos seu projeto</h2>
+        </header>
+        <ol class="timeline">
+          <li class="reveal"><span class="timeline__n">1</span><h3>Planejamento</h3><p>Entendemos as necessidades do cliente.</p></li>
+          <li class="reveal"><span class="timeline__n">2</span><h3>Design</h3><p>Criamos a proposta visual do projeto.</p></li>
+          <li class="reveal"><span class="timeline__n">3</span><h3>Desenvolvimento</h3><p>Transformamos o planejamento em código.</p></li>
+          <li class="reveal"><span class="timeline__n">4</span><h3>Entrega</h3><p>Realizamos testes e disponibilizamos a solução.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ SEÇÃO 8: CONTATO ============ -->
+    <section class="section section--alt" id="contato" aria-labelledby="cont-title">
+      <div class="container contact">
+        <div class="reveal">
+          <h2 id="cont-title">Seu próximo projeto começa aqui.</h2>
+          <p class="lead">Conte um pouco sobre a sua ideia. Ao enviar, abriremos o WhatsApp com a mensagem pronta para você conferir e enviar.</p>
+        </div>
+        <form class="form glass reveal" id="form" novalidate>
+          <div class="field">
+            <label for="nome">Nome</label>
+            <input maxlength="160" id="nome" name="nome" type="text" autocomplete="name" required aria-describedby="nome-err">
+            <small class="err" id="nome-err" role="alert"></small>
+          </div>
+          <div class="field">
+            <label for="email">E-mail</label>
+            <input maxlength="160" id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-err">
+            <small class="err" id="email-err" role="alert"></small>
+          </div>
+          <div class="field">
+            <label for="whatsapp">WhatsApp</label>
+            <input maxlength="20" id="whatsapp" name="whatsapp" type="tel" inputmode="tel" placeholder="(00) 00000-0000" autocomplete="tel" required aria-describedby="whatsapp-err">
+            <small class="err" id="whatsapp-err" role="alert"></small>
+          </div>
+          <div class="field">
+            <label for="servico">Tipo de serviço</label>
+            <select id="servico" name="servico" required aria-describedby="servico-err">
+              <option value="">Selecione uma opção</option>
+              <option>Desenvolvimento de site</option>
+              <option>Landing page</option>
+              <option>Loja virtual</option>
+              <option>Sistema web</option>
+              <option>Manutenção de site</option>
+              <option>Outro</option>
+            </select>
+            <small class="err" id="servico-err" role="alert"></small>
+          </div>
+          <div class="field field--full">
+            <label for="descricao">Descrição do projeto</label>
+            <textarea maxlength="1000" id="descricao" name="descricao" rows="5" required aria-describedby="descricao-err"></textarea>
+            <small class="err" id="descricao-err" role="alert"></small>
+          </div>
+          <button class="btn btn--primary field--full" type="submit">Solicitar orçamento</button>
+          <p class="form__status field--full" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ SEÇÃO 9: FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <a href="#inicio" class="logo"><span class="logo__mark" aria-hidden="true">&lt;/&gt;</span>CODENIX <span class="logo__light">DIGITAL</span></a>
+        <p class="footer__slogan">Transformando ideias em soluções digitais.</p>
+      </div>
+      <nav aria-label="Links rápidos">
+        <h3>Links rápidos</h3>
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#portfolio">Portfólio</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h3>Redes</h3>
+        <ul id="social">
+          <!-- Troque href="#" pelos seus links reais. Links com "#" ficam marcados como "em breve". -->
+          <li><a data-social href="https://github.com/codenixdigital">GitHub</a></li>
+          <li><a data-social href="https://wa.me/5585984274433?utm_source=chatgpt.com">WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer__copy container">&copy; <span id="ano"></span> CODENIX DIGITAL. Todos os direitos reservados.</p>
+  </footer>
+
+  <button class="totop" id="totop" aria-label="Voltar ao topo" hidden><svg class="ico"><use href="#i-up"/></svg></button>
+
+  <script src="script.js"></script>
+</body>
+</html>
